@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Iris & Oak: Artificial flowers</title>
+       <link rel="stylesheet"href="i&o.css">
+       <link rel="icon" href="Favicon.jpeg" type="Image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h2> Iris & Oak </h2>
+        </header>
+
+        <nav>
+            <a href="home.html">Home </a>&nbsp;
+            <a href="plants.html">Plants </a>&nbsp;
+            <a href="flowers.html">Flowers </a>&nbsp;
+            <a href="care.html">Care methods </a>&nbsp;
+            <a href="cart.html">The cart </a>&nbsp;
+            <a href="CQ.html">Common questions </a>
+        </nav>
+
+        <main>
+            <h2 style="background-color: #8BAB96; padding-left: 10px;"> Artificial flowers:</h2>
+            <div class="container">
+            <div class="product" id="artificial1">
+                <div class="product-item">
+                    <img src="4.jpg" width="200" height="250"> <br>
+                    <span>Purple artificial rose arrangement in a glass vase  </span>
+                    <span>65.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('artificial1')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" id="artificial2">
+                <div class="product-item">
+                    <img src="5.jpg" width="200" height="250"> <br>
+                    <span>Pink artificial rose arrangement in a glassvase   </span>
+                    <span>75.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('artificial2')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" id="artificial3">
+                <div class="product-item">
+                    <img src="6.jpg" width="200" height="250" >  <br>
+                    <span>Red artificial rose arrangement in a glass vase    </span>
+                    <span>60.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('artificial3')">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+            
+        
+            <script>
+                function addToCart(productId) {
+                    alert(productId + " is add on the cart");
+                }
+    
+    
+                function removeFromCart(cartItemId) {
+                    const cartItem = document.getElementById(cartItemId);
+                    cartItem.remove();
+                    alert(cartItemId + "is removed");
+                }
+    
+    
+    
+            </script>
+        </main>
+
+        <footer>
+            Copyright &copy; 2024 Internet applications <br>
+        </footer>
+
+    </body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iris & Oak: Outdoor plants</title>
+    <link rel="stylesheet" href="i&o.css">
+    <link rel="icon" href="Favicon.jpeg" type="Image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h2> Iris & Oak </h2>
+    </header>
+
+    <nav>
+        <a href="home.html">Home </a>&nbsp;
+        <a href="plants.html">Plants </a>&nbsp;
+        <a href="flowers.html">Flowers </a>&nbsp;
+        <a href="care.html">Care methods </a>&nbsp;
+        <a href="cart.html">The cart </a>&nbsp;
+        <a href="questions.html">Common questions </a>
+
+    </nav>
+
+    <main>
+        <h2 class="link"> Outdoor plants:</h2>
+        <div class="container">
+            <div class="product" id="Vivi">
+                <div class="product-item">
+                    <img src="Vivi.jpg" width="200" height="250"> <br>
+                    <span>Vivi</span>
+                    <span>80.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('Vivi')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" id="Connie">
+                <div class="product-item">
+                    <img src="Connie.jpg" width="200" height="250"> <br>
+                    <span>Connie</span>
+                    <span>70.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('Connie')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" id="Cory">
+                <div class="product-item">
+                    <img src="Cory.jpg" width="200" height="250"> <br>
+                    <span>Cory</span>
+                    <span>60.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('Cory')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function addToCart(productId) {
+                alert(productId + " is add on the cart");
+            }
+
+
+            function removeFromCart(cartItemId) {
+                const cartItem = document.getElementById(cartItemId);
+                cartItem.remove();
+                alert(cartItemId + "is removed");
+            }
+
+
+
+        </script>
+
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2024 Internet applications <br>
+    </footer>
+
+</body>

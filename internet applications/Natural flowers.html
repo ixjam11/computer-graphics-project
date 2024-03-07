@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Iris & Oak: Natural flowers</title>
+       <link rel="stylesheet"href="i&o.css">
+       <link rel="icon" href="Favicon.jpeg" type="Image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h2> Iris & Oak </h2>
+        </header>
+
+        <nav>
+            <a href="home.html">Home </a>&nbsp;
+            <a href="plants.html">Plants </a>&nbsp;
+            <a href="flowers.html">Flowers </a>&nbsp;
+            <a href="care.html">Care methods </a>&nbsp;
+            <a href="cart.html">The cart </a>&nbsp;
+            <a href="CQ.html">Commonquestions </a>
+        </nav>
+
+        <main>
+            <h2 style="background-color: #8BAB96; padding-left: 10px;"> Natural flowers:</h2>
+            <div class="container">
+            <div class="product" id="bouquet1">
+                <div class="product-item">
+                    <img src="1.jpg" width="200" height="250"> <br>
+                    <span>Combination of bright red roses and pink baby roses     </span>
+                    <span>90.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('bouquet1')">Add to Cart</button>
+                </div>
+            </div>
+        
+            <div class="product" id="bouquet2">
+                <div class="product-item">
+                    <img src="2.jpg" width="200" height="250"> <br>
+                    <span>Hand bouquet of 15 white lilies  </span>
+                    <span>70.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('bouquet2')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" id="bouquet3">
+                <div class="product-item">
+                    <img src="3.jpg" width="200" height="250" >  <br>
+                    <span>The bouquet was arranged with 12 red roses  </span>
+                    <span>70.00SAR</span><br>
+                    <button class="btn btn-add" onclick="addToCart('bouquet')">Add to Cart</button>
+                </div>
+            </div>
+            </div>
+            
+            <script>
+                function addToCart(productId) {
+                    alert(productId + " is add on the cart");
+                }
+    
+    
+                function removeFromCart(cartItemId) {
+                    const cartItem = document.getElementById(cartItemId);
+                    cartItem.remove();
+                    alert(cartItemId + "is removed");
+                }
+    
+    
+    
+            </script>
+        </main>
+
+        <footer>
+            Copyright &copy; 2024 Internet applications <br>
+        </footer>
+
+    </body>

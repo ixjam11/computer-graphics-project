@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Iris & Oak</title>
+       <link rel="stylesheet"href="Leafy.css">
+       <script src="js.js"></script>
+       <link rel="icon" href="Favicon.jpeg" type="Image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h3> Iris & Oak </h3>
+        </header>
+        <nav>
+            <a href="home.html">Home </a>&nbsp;
+            <a href="plants.html">Plants </a>&nbsp;
+            <a href="flowers.html">Flowers </a>&nbsp;
+            <a href="care.html">Care methods </a>&nbsp;
+            <a href="cart.html">The cart </a>&nbsp;
+            <a href="CQ.html">Common questions </a>
+        </nav>
+        <main>
+
+            <div class="cart">
+                <h2 style="background-color: #8BAB96; padding-left: 10px;">Shopping Cart</h2>
+             
+                <div class="cart-item" id="cart-product1">
+                    <img src="Monster.jpg" alt="photo for monstera plant" height="200" width="200" align="bottom">
+                    <br>
+                    <span>Product 1</span>
+                    <span>SAR20.00</span>
+                    <button class="btn btn-remove" onclick="removeFromCart('cart-product1')">Remove</button>
+                </div>
+        
+                <div class="cart-item" id="cart-product2">
+                    <img src="1.jpg" alt="photo for monstera plant" height="200" width="200" align="bottom">
+                    <br>
+                    <span>Product 2</span>
+                    <span>SAR30.00</span>
+                    <button class="btn btn-remove" onclick="removeFromCart('cart-product2')">Remove</button>
+                </div>
+            </div>
+
+            <script>
+      function removeFromCart(cartItemId) {
+                    const cartItem = document.getElementById(cartItemId);
+                    cartItem.remove();
+                    alert(cartItemId + "is removed");
+                }
+ </script>
+        
+          
+         
+        </main>
+        <footer>
+            Copyright &copy; 2024 Internet applications <br>
+        </footer>
+    </body>

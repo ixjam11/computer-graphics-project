@@ -1,0 +1,88 @@
+header{color: #ffffff;
+font-family:palatino;
+background-color: #1C3230;
+padding-top: 10PX;
+height: 90px;
+padding-left: 10px;}
+
+body {
+   background:#D3ACA7;
+   width: 90%;
+   height: 90%;
+   padding: 50px;}
+
+main{background-color: #ffffff;
+   padding: 20px;
+align-content: 1000px;}
+
+nav{font-size: small;
+   background-color: #1C3230;
+   padding-left: 20PX;
+   word-spacing: 10px;
+   font-family:Arial, Helvetica, sans-serif;}
+
+nav a {text-decoration: none;}
+    
+nav a:visited {color: #ffffff;}
+    
+nav a:link {color: #ffffff;}
+    
+nav a:hover {color: #ffffff;}
+
+footer {
+   background-color: #0D1110;
+   color: #ffffff;
+   font-size: small;
+   font-style: italic;
+   padding-left: 200px;
+   border-top: 2px solid #221811;
+}
+
+select{background-color: #1C3230}
+
+.container {
+   padding-left: 150px;
+   column-count: 3;
+   column-gap: 10px;
+ }
+
+
+ figcaption{
+   direction: none;
+ }
+
+ .product,
+ .cart {
+     width: 200px;
+     border: 1px solid #ddd;
+     padding: 10px;
+ }
+
+ .product {
+     margin-right: 20px;
+ }
+
+ .cart-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 0;
+ }
+
+ .btn {
+     padding: 8px 16px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+
+ .btn-add {
+     background-color: #4caf50;
+     color: white;
+     border: none;
+ }
+
+ .btn-remove {
+     background-color: #f44336;
+     color: white;
+     border: none;
+ }
